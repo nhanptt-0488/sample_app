@@ -30,4 +30,26 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  hello: "hello friends"
+  help_page: "Help Page"
+  home_page: "Home Page"
+  home: "Home"
+  help: "Help"
+  log_in: "Log in"
+  find_me: "Find me in app/views/static_pages/help.html.erb"
+  zone: "Zone"
+  editing_zone: "Editing zone"
+  new_zone: "New zone"
+  date: "Date"
+vi:
+  hhello: "hello friends"
+  help_page: "Trang giúp đỡ"
+  home_page: "Trang chủ"
+  home: "Trang chủ"
+  help: "Giúp đỡ"
+  log_in: "Đăng nhập"
+  find_me: "Truy cập app/views/static_pages/help.html.erb"
+  zone: "Vùng"
+  editing_zone: "Cập nhật vùng"
+  new_zone: "Tạo mới vùng"
+  date: "Ngày"
