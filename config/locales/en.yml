@@ -30,4 +30,18 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  hello: "hello friends"
+  help_page: "Help Page"
+  home_page: "Home Page"
+  home: "Home"
+  help: "Help"
+  log_in: "Log in"
+  find_me: "Find me in app/views/static_pages/help.html.erb"
+  zone: "Zone"
+  editing_zone: "Editing zone"
+  new_zone: "New zone"
+  date: "Date"
+  rails_app_title: "Ruby on Rails Toturial Sample App"
+  zone_new_action: "Zone new action"
+  zone_edit_action: "Zone edit action"
+  ruby_on_rails: "Ruby on Rails"
