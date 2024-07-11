@@ -45,3 +45,18 @@ en:
   zone_new_action: "Zone new action"
   zone_edit_action: "Zone edit action"
   ruby_on_rails: "Ruby on Rails"
+  confirmation: "Confirmation"
+  user_created_successfully: "User created successfully!"
+  user_not_found: "User not found!"
+  users:
+    new:
+      create_my_account: "Create my account"
+      name: "Name"
+      sign_up: "Sign up"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+  shared:
+    error_messages:
+      the_form_contains: "The form contains"
+      errors: "errors"

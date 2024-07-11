@@ -14,3 +14,18 @@ vi:
   zone_new_action: "Hành động tạo vùng mới"
   zone_edit_action: "Hành động cập nhật vùng mới"
   ruby_on_rails: "Ruby on Rails"
+  user_not_found: "Không tìm thấy người dùng!"
+  confirmation: "Xác nhận"
+  user_created_successfully: "Tạo tài khoản thành công!"
+  users:
+    new:
+      create_my_account: "Tạo tài kh"
+      sign_up: "Đăng nhập"
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+  shared:
+    error_messages:
+      the_form_contains: "Form chứa"
+      errors: "lỗi"
