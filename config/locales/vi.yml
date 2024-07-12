@@ -15,8 +15,10 @@ vi:
   zone_edit_action: "Hành động cập nhật vùng mới"
   ruby_on_rails: "Ruby on Rails"
   user_not_found: "Không tìm thấy người dùng!"
+  invalid_email: "Email và mật khẩu không hợp lệ"
   confirmation: "Xác nhận"
   user_created_successfully: "Tạo tài khoản thành công!"
+  sample_app: "Ứng dụng demo"
   users:
     new:
       create_my_account: "Tạo tài kh"
@@ -29,3 +31,16 @@ vi:
     error_messages:
       the_form_contains: "Form chứa"
       errors: "lỗi"
+  layouts:
+    header:
+      user: "Người dùng"
+      account: "Tài khoản"
+      profile: "Thông tin cá nhân"
+      settings: "Cài đặt"
+      log_out: "Đăng xuất"
+  sessions:
+    new:
+      email: "Email"
+      password: "Mật khẩu"
+      new_user: "Bạn là người dùng mới?"
+      sign_up_now: "Đăng ký ngay!" 

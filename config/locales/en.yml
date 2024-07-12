@@ -48,6 +48,8 @@ en:
   confirmation: "Confirmation"
   user_created_successfully: "User created successfully!"
   user_not_found: "User not found!"
+  invalid_email: "Invalid email password combination"
+  sample_app: "Sample App"
   users:
     new:
       create_my_account: "Create my account"
@@ -60,3 +62,16 @@ en:
     error_messages:
       the_form_contains: "The form contains"
       errors: "errors"
+  layouts:
+    header:
+      user: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Log out"
+  sessions:
+    new:
+      email: "Email"
+      password: "Password"
+      new_user: "New User?"
+      sign_up_now: "Sign up now!"
