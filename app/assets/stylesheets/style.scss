@@ -103,3 +103,9 @@ aside {
     color: $invalid_text;
   }
 }
+
+/* Dropdown menu */
+
+.dropdown-menu.active {
+  display: block;
+}
