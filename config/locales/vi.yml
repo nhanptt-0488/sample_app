@@ -1,5 +1,5 @@
 vi:
-  hhello: "hello friends"
+  hello: "hello friends"
   help_page: "Trang giúp đỡ"
   home_page: "Trang chủ"
   home: "Trang chủ"
@@ -56,3 +56,14 @@ vi:
       delete: 
         title: "Xóa"
         confirmation: "Bạn có chắc chắn muốn xóa user này không"
+user_mailer:
+    account_activation:
+      subject: "Kích hoạt tài khoản"
+      sample_app: "Ứng dụng mẫu"
+      hello: "Xin chào %{name}"
+      click_link: "Nhấn vào đường dẫn bên dưới để kích hoạt tài khoản của bạn:"
+      activate: "Kích hoạt tài khoản"
+  account_activations:
+    edit:
+      invalid: "Liên kết kích hoạt không hợp lệ"
+      activated: "Tài khoản đã được kích hoạt"

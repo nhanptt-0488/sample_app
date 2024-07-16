@@ -46,6 +46,7 @@ gem "config"
 gem "rails-i18n"
 gem "faker", "2.21.0"
 gem "pagy"
+gem "figaro"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
