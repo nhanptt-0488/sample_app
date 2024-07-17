@@ -7,7 +7,8 @@ class User < ApplicationRecord
     format: {with: Regexp.new(Settings.valid_email_regex)},
     uniqueness: true
   validates :password, presence: true,
-    length: {minimum: Settings.min_password_length}
+    length: {minimum: Settings.min_password_length},
+    allow_nil: true
 
   before_save :downcase_email
 

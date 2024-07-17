@@ -44,6 +44,8 @@ gem "bootsnap", require: false
 gem "bootstrap-sass", "3.4.1"
 gem "config"
 gem "rails-i18n"
+gem "faker", "2.21.0"
+gem "pagy"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
