@@ -46,13 +46,24 @@ vi:
       remember_me: "Nhớ mật khẩu"
       sign_up_now: "Đăng ký ngay!" 
   user:
-      edit:
-        title: "Sửa thông tin cá nhân"
-        confirmation: "Xác nhận lại mật khẩu"
-        change: "Thay đổi"
-        save: "Lưu thay đổi"
-      index: 
-        title: "Danh sách người dùng"
-      delete: 
-        title: "Xóa"
-        confirmation: "Bạn có chắc chắn muốn xóa user này không"
+    edit:
+      title: "Sửa thông tin cá nhân"
+      confirmation: "Xác nhận lại mật khẩu"
+      change: "Thay đổi"
+      save: "Lưu thay đổi"
+    index: 
+      title: "Danh sách người dùng"
+    delete: 
+      title: "Xóa"
+      confirmation: "Bạn có chắc chắn muốn xóa user này không"
+  user_mailer:
+    account_activation:
+      subject: "Kích hoạt tài khoản"
+      sample_app: "Ứng dụng mẫu"
+      hello: "Xin chào %{name}"
+      click_link: "Nhấn vào đường dẫn bên dưới để kích hoạt tài khoản của bạn:"
+      activate: "Kích hoạt tài khoản"
+  account_activations:
+    edit:
+      invalid: "Liên kết kích hoạt không hợp lệ"
+      activated: "Tài khoản đã được kích hoạt"
