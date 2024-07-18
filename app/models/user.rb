@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   ATTRIBUTES = %i(name email password password_confirmation).freeze
+  RESET_PASSWORD_ATTRIBUTES = %i(password password_confirmation).freeze
 
   validates :name, presence: true, length: {maximum: Settings.max_name_length}
   validates :email, presence: true,
@@ -15,12 +16,7 @@ class User < ApplicationRecord
 
   has_secure_password
 
-  attr_accessor :remember_token, :activation_token
-
-  private
-  def downcase_email
-    email.downcase!
-  end
+  attr_accessor :remember_token, :activation_token, :reset_token
 
   def remember
     self.remember_token = User.new_token
@@ -51,6 +47,19 @@ class User < ApplicationRecord
     self.activation_digest = User.digest activation_token
   end
 
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_columns reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < Settings.hours_expired.hours.ago
+  end
+
   class << self
     def digest string
       cost = if ActiveModel::SecurePassword.min_cost
@@ -58,11 +67,16 @@ class User < ApplicationRecord
              else
                BCrypt::Engine.cost
              end
-      BCrypt::Password.create string, cost
+      BCrypt::Password.create string, cost:
     end
 
     def new_token
       SecureRandom.urlsafe_base64
     end
+  end
+
+  private
+  def downcase_email
+    email.downcase!
   end
 end
