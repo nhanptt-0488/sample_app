@@ -1,5 +1,5 @@
 vi:
-  hhello: "hello friends"
+  hello: "hello friends"
   help_page: "Trang giúp đỡ"
   home_page: "Trang chủ"
   home: "Trang chủ"
@@ -29,6 +29,12 @@ vi:
       password_confirmation: "Xác nhận mật khẩu"
       forgot_password: "Quên mật khẩu"
   shared:
+    micropost_form:
+      post: "Đăng"
+      compose: "Viết bài viết mới..."
+    user_info:
+      view_profile: "Xem hồ sơ của tôi"
+      microposts: "bài viết"
     error_messages:
       the_form_contains: "Form chứa"
       errors: "lỗi"
@@ -68,6 +74,11 @@ vi:
       message: "Để đặt lại mật khẩu của bạn hãy nhấp vào liên kết bên dưới:"
       message_2: "Liên kết này sẽ hết hạn sau hai giờ."
       message_3: "Nếu bạn không yêu cầu đặt lại mật khẩu, hãy bỏ qua email này và mật khẩu của bạn sẽ không thay đổi."
+      subject: "Đặt lại mật khẩu"
+      click_link: "Nhấn vào đường dẫn bên dưới để đặt lại mật khẩu của bạn:"
+      reset: "Đặt lại mật khẩu"
+      expired: "Đường dẫn này sẽ hết hạn sau hai giờ."
+      ignored: "Nếu bạn không yêu cầu đặt lại mật khẩu, hãy bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
   account_activations:
     edit:
       invalid: "Liên kết kích hoạt không hợp lệ"

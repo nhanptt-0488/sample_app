@@ -3,8 +3,21 @@ max_name_length: 50
 min_password_length: 6
 image_url: "http://gravatar.com/emails"
 hours_expired: 2
+digit_140: 140
+digit_200: 200
+max_image_size: 50
+page_10: 10
 gravatar:
   size: 80
   list_size: 50
 help_link: "https://tiv.wsm.vn/learn/en/learning/1467/content/618/video/5073/"
+home_url: "http://www.railstutorial.org/"
 valid_email_regex: \A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z
+image_types: ["image/jpg", "image/gif", "image/png"]
+servers:
+  tutorials: https://www.railstutorial.org/
+  rails: http://rubyonrails.org/
+  help: https://www.railstutorial.org/help
+  contact: https://www.railstutorial.org/contact
+  news: https://news.railstutorial.org/
+  email: https://gravatar.com/emails
