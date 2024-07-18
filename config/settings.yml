@@ -2,6 +2,7 @@ max_email_length: 50
 max_name_length: 50 
 min_password_length: 6
 image_url: "http://gravatar.com/emails"
+hours_expired: 2
 gravatar:
   size: 80
   list_size: 50
