@@ -16,9 +16,9 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      log_in @user
-      flash[:success] = t("user_created_successfully")
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "users.create.check_email"
+      redirect_to root_url, status: :see_other
     else
       render :new, status: :unprocessable_entity
     end
@@ -67,7 +67,7 @@ class UsersController < ApplicationController
   def admin_user
     redirect_to root_path unless current_user.admin?
   end
-  
+
   private
   def user_params
     params.require(:user).permit(User::ATTRIBUTES)

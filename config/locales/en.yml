@@ -41,7 +41,7 @@ en:
   editing_zone: "Editing zone"
   new_zone: "New zone"
   date: "Date"
-  rails_app_title: "Ruby on Rails Toturial Sample App"
+  rails_app_title: "Ruby on Rails Tutorial Sample App"
   zone_new_action: "Zone new action"
   zone_edit_action: "Zone edit action"
   ruby_on_rails: "Ruby on Rails"
@@ -50,7 +50,6 @@ en:
   user_not_found: "User not found!"
   invalid_email: "Invalid email password combination"
   sample_app: "Sample App"
-  confirmation: "Confirmation"
   users:
     new:
       create_my_account: "Create my account"
@@ -78,13 +77,24 @@ en:
       sign_up_now: "Sign up now!"
       remember_me: "Remember me"
   user:
-      edit:
-        title: "Edit User"
-        confirmation: "Confirmation"
-        change: "Change"
-        save: "Save changes"
-      index:
-        title: "List users"
-      delete: 
-        title: "Delete"
-        confirmation: "Are you sure you want to delete this user?"
+    edit:
+      title: "Edit User"
+      confirmation: "Confirmation"
+      change: "Change"
+      save: "Save changes"
+    index:
+      title: "List users"
+    delete: 
+      title: "Delete"
+      confirmation: "Are you sure you want to delete this user?"
+  user_mailer:
+    account_activation:
+      subject: "Account activation"
+      sample_app: "Sample App"
+      hello: "Hi %{name}"
+      click_link: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+  account_activations:
+    edit:
+      invalid: "Invalid activation link"
+      activated: "Account activated!"
