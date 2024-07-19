@@ -6,6 +6,7 @@ hours_expired: 2
 digit_140: 140
 digit_200: 200
 max_image_size: 50
+user_small_size: 30
 page_10: 10
 gravatar:
   size: 80

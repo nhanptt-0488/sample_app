@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, excpet: %i(show new create)
-  before_action :set_user, except: %i(index new create)
+  before_action :find_user, except: %i(index new create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
@@ -26,6 +26,7 @@ class UsersController < ApplicationController
 
   def index
     @pagy, @users = pagy User.all, items: Settings.page_10
+  end
 
   def edit; end
 
@@ -57,6 +58,18 @@ class UsersController < ApplicationController
 
   def admin_user
     redirect_to root_path unless current_user.admin?
+  end
+
+  def following
+    @title = t "shared.stats.following"
+    @pagy, @users = pagy @user.following, items: Settings.page_10
+    render :show_follow
+  end
+
+  def followers
+    @title = t "shared.stats.followers"
+    @pagy, @users = pagy @user.followers, items: Settings.page_10
+    render :show_follow
   end
 
   private
