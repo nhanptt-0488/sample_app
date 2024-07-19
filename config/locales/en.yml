@@ -60,6 +60,11 @@ en:
       password: "Password"
       password_confirmation: "Password confirmation"
       forgot_password: "Forgot password"
+    follow: "Follow"
+    unfollow: "Unfollow"
+    show_follow:
+      microposts: "Microposts"
+      view_my_profile: "View my profile"
   shared:
     micropost_form:
       post: "Post"
@@ -70,6 +75,9 @@ en:
     error_messages:
       the_form_contains: "The form contains"
       errors: "errors"
+    stats:
+      following: "Following"
+      followers: "Followers"
   layouts:
     header:
       user: "Users"
@@ -149,3 +157,6 @@ en:
       alert: "Maximum file size is 5MB. Please choose a smaller file."
       limit_size: "Image size must be less than %{size}MB."
       valid: "Invalid image format. Please choose a valid format."
+  relationships:
+    show:
+      not_found: "Relationship not found"
