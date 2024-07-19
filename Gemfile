@@ -40,11 +40,14 @@ gem "bcrypt", "~> 3.1.7"
 gem "tzinfo-data", platforms: %i(mingw mswin x64_mingw jruby)
 
 # Reduces boot times through caching; required in config/boot.rb
+gem "active_storage_validations", "0.9.8"
 gem "bootsnap", require: false
 gem "bootstrap-sass", "3.4.1"
 gem "config"
 gem "faker", "2.21.0"
 gem "figaro"
+gem "i18n-js", "3.8.0"
+gem "image_processing", "1.12.2"
 gem "pagy"
 gem "rails-i18n"
 

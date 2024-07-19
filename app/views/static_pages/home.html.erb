@@ -1,2 +1,27 @@
-<h1><%= t("home_page") %></h1>
-<p><%= t("find_me") %></p>
+<% provide :title, t("home_page") %>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t "home.feed" %></h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <h1><%= t "layouts.sample_app" %></h1>
+  <p><%= t ".paragraph_html", source: Settings.servers.tutorials %></p>
+  <div class="center jumbotron">
+    <h1><%= t "home.content_2" %></h1>
+    <h2><%= t("home.content", source: Settings.home_url).html_safe %></h2>
+    <%= link_to t("sign_up"), signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+  <%= link_to image_tag("rails.svg", width: "200"), Settings.servers.rails, class: "image-link" %>
+  <%= link_to image_tag("child.jpg", width: "200"), "#", class: "image-link image-add" %>
+<% end %>
